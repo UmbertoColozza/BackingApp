@@ -4,17 +4,8 @@ import android.content.Intent;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-
 import com.umberto.backingapp.R;
-import com.umberto.backingapp.data.Ingredient;
 import com.umberto.backingapp.data.Recipe;
-import com.umberto.backingapp.data.Step;
-
-import java.util.ArrayList;
 
 public class RecipeListStepDescriptionActivity extends AppCompatActivity implements RecipeListStepDescriptionFragment.OnStepDescriptionItemClickListener {
     private static final String TITLE="title";
@@ -46,7 +37,6 @@ public class RecipeListStepDescriptionActivity extends AppCompatActivity impleme
 
                 fragmentManager.beginTransaction()
                         .add(R.id.flRecipeStepDescription, recipeListStepDescriptionFragment)
-                        .addToBackStack(null)
                         .commit();
 
 
@@ -56,7 +46,6 @@ public class RecipeListStepDescriptionActivity extends AppCompatActivity impleme
 
                     fragmentManager.beginTransaction()
                             .add(R.id.flRecipeStepDetail, recipeMediaFragment)
-                            .addToBackStack(null)
                             .commit();
 
                 }
@@ -65,12 +54,6 @@ public class RecipeListStepDescriptionActivity extends AppCompatActivity impleme
             this.setTitle(savedInstanceState.getCharSequence(TITLE));
             recipe=savedInstanceState.getParcelable(RECIPE);
         }
-    }
-
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        Log.d("Recipe" ,"Back pressed");
     }
 
     @Override

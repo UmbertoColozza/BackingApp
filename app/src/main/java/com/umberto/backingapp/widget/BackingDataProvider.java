@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.widget.RemoteViews;
 import android.widget.RemoteViewsService;
-
 import com.umberto.backingapp.R;
 import com.umberto.backingapp.data.Recipe;
 import com.umberto.backingapp.utils.PrefercenceUtils;

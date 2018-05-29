@@ -19,7 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.RecipeListStepDescriptionActivity"
+        <activity android:name=".ui.RecipeListStepDescriptionActivity" android:launchMode="singleTop"
             android:parentActivityName=".ui.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -28,7 +28,7 @@
         <activity android:name=".ui.RecipeStepDetailActivity" android:parentActivityName=".ui.RecipeListStepDescriptionActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.umberto.backingapp.ui.MainActivity" />
+                android:value="com.umberto.backingapp.ui.RecipeListStepDescriptionActivity" />
         </activity>
 
         <receiver android:name=".widget.BackingAppWidget">

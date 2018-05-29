@@ -5,20 +5,14 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.umberto.backingapp.R;
-import com.umberto.backingapp.data.Ingredient;
 import com.umberto.backingapp.data.Recipe;
 import com.umberto.backingapp.utility.ApiClient;
 import com.umberto.backingapp.utility.ApiInterface;
-
 import java.util.ArrayList;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -59,7 +53,6 @@ public class RecipeCardFragment extends Fragment {
 
                 @Override
                 public void onFailure(Call<ArrayList<Recipe>> call, Throwable t) {
-                    Log.d("MainActivity", "Error " + t.toString());
                 }
             });
         } else {

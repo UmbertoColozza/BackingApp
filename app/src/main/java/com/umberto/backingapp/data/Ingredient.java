@@ -2,7 +2,6 @@ package com.umberto.backingapp.data;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-
 import com.google.gson.annotations.SerializedName;
 
 public class Ingredient implements Parcelable {

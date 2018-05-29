@@ -6,7 +6,6 @@ import android.appwidget.AppWidgetProvider;
 import android.content.Context;
 import android.content.Intent;
 import android.widget.RemoteViews;
-
 import com.umberto.backingapp.R;
 import com.umberto.backingapp.data.Recipe;
 import com.umberto.backingapp.ui.MainActivity;

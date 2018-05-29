@@ -3,7 +3,6 @@ package com.umberto.backingapp.widget;
 import android.appwidget.AppWidgetManager;
 import android.content.Intent;
 import android.widget.RemoteViewsService;
-
 import com.umberto.backingapp.data.Recipe;
 
 public class BackingWidgetService extends RemoteViewsService {

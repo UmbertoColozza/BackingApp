@@ -2,9 +2,7 @@ package com.umberto.backingapp.data;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-
 import com.google.gson.annotations.SerializedName;
-
 import java.util.ArrayList;
 
 public class Recipe implements Parcelable {
