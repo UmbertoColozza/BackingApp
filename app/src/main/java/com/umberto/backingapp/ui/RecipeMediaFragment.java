@@ -157,6 +157,7 @@ public class RecipeMediaFragment extends Fragment {
             ivRecipeStep.setScaleType(ImageView.ScaleType.CENTER);
             ivRecipeStep.setImageResource(R.drawable.progress_animation);
 
+            //If thumbnail is not null load image
             Picasso.with(this.getContext()).load(mediaUri)
                     .noPlaceholder()
                     .error(R.drawable.no_camera)
@@ -244,13 +245,14 @@ public class RecipeMediaFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
-
+        //Initialize player and set current video
         initExoPlayer();
         setMediaPlayer(recipe.getSteps().get(currentStep).getThumbnailURL(), recipe.getSteps().get(currentStep).getVideoURL());
     }
     @Override
     public void onStop() {
         super.onStop();
+        //Release ExoPlayer.
         releasePlayer();
     }
 }
