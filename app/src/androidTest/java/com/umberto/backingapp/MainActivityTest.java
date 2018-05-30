@@ -7,6 +7,7 @@ import android.support.test.runner.AndroidJUnit4;
 import com.umberto.backingapp.ui.MainActivity;
 import com.umberto.backingapp.ui.RecipeListStepDescriptionActivity;
 
+import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;

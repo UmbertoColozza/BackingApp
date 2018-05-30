@@ -236,13 +236,6 @@ public class RecipeMediaFragment extends Fragment {
     }
 
     @Override
-    public void onDestroy() {
-        super.onDestroy();
-        //Release ExoPlayer.
-        releasePlayer();
-    }
-
-    @Override
     public void onStart() {
         super.onStart();
         //Initialize player and set current video
